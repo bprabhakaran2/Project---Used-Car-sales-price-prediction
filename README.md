@@ -52,6 +52,7 @@ Ridge Regression and Lasso Regression are other mutiple regression models that w
 **Standard Deviations of Features:**
 **Region:** 117.54 — Highest variability, indicates that there is a large variation in the "region" feature across the dataset.
 **Year:** 9.60 — The "year" feature also has a relatively high standard deviation, suggesting that the dataset spans a range of years, with more variability in this feature.
+
 **Manufacturer:** 12.12 — The "manufacturer" feature varies moderately, indicating that there are multiple manufacturers, but some are more common than others.
 **Model:** 7470.02 — "Model" has a very high standard deviation, indicating that there are many different car models with significant variability in this feature.
 **Condition:** 1.41 — This feature has the smallest standard deviation, meaning that the condition values are relatively uniform across the dataset.
