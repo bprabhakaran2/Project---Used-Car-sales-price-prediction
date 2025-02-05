@@ -20,11 +20,19 @@ In order to understand data, the below sequential steps will be followed:
 1. Load data
 2. check and remove duplicate rows
 3. Analyze data for missing values and outliers
-4. Visualize data for exploratory analysis of relationship between features contributong to the price
+4. Visualize data for exploratory analysis of relationship between features contributing to the price
 ## Data Preparation
 After our initial exploration and fine-tuning of the business understanding, it is time to construct our final dataset prior to modeling.  Here, we want to make sure to handle any integrity issues and cleaning, 
 the engineering of new features, any transformations that we believe should happen (scaling, logarithms, normalization, etc.), and general preparation for modeling with `sklearn`. 
 Part of this step, is to split data into train and test set,encode,fit and transform data that can be used for the machine learning model.
+1. Data outliers were identified for Price,Year and Odometer , the below outliers were used to subset to model with refined dataset that is meaningful:
+     Price dataset between 25th and 75th quantile
+     Cars after Year 1900 were subsetted
+     Odometer reading between 0 and 1000000
+2. SimpleImputer is a class in sklearn.impute used to handle missing values in datasets.It allows to easily impute missing values with strategies like mean, median, most frequent, or a constant value.
+     For the used cars dataset, categorical columns were handled by filling with most frequent value and numerical columns were handled by populating with column median value.
+3. Categorical columns were encoded using LabelEncoder to standardize values in order to run the LinearRegression model.
+4. Data was split into train and test with an 80/20 ratio for training and testing the model
 ### Modeling
 With your near to final dataset in hand, it is now time to build some models.  
 Here, data is first feature scaled and modelled useding LinearRegression, this is a basic model for predictive analysis. 
