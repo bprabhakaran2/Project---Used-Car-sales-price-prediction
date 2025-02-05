@@ -51,23 +51,38 @@ Ridge Regression and Lasso Regression are other mutiple regression models that w
 ## Interpretation of Coefficients(updated per comments provided)
 **Standard Deviations of Features:**
 **Region:** 117.54 — Highest variability, indicates that there is a large variation in the "region" feature across the dataset.
+
 **Year:** 9.60 — The "year" feature also has a relatively high standard deviation, suggesting that the dataset spans a range of years, with more variability in this feature.
 
 **Manufacturer:** 12.12 — The "manufacturer" feature varies moderately, indicating that there are multiple manufacturers, but some are more common than others.
+
 **Model:** 7470.02 — "Model" has a very high standard deviation, indicating that there are many different car models with significant variability in this feature.
+
 **Condition:** 1.41 — This feature has the smallest standard deviation, meaning that the condition values are relatively uniform across the dataset.
+
 **Cylinders:** 1.52 — This feature varies moderately, reflecting that there are a variety of cylinder counts in the dataset.
+
 **Fuel:** 0.78 — "Fuel" has relatively low variability, meaning that the dataset contains a number of different fuel types, but not as diverse as some other features.
+
 **Odometer:** 71,234.95 — The "odometer" feature has a large variation, indicating that the mileage of the cars varies greatly across the dataset.
+
 **Title Status:** 0.75 — The "title_status" feature has low variability, suggesting that most cars have a similar title status (e.g., clean title).
+
 **Transmission:** 0.76 — This feature also shows low variability, meaning most cars have a similar transmission type(Automatic, Manual,other).
+
 **Drive:** 1.04 — "Drive" shows moderate variability, reflecting that there are several types of drive configurations in the dataset (e.g., FWD, RWD).
+
 **Size:** 1.06 — This feature has moderate variability, indicating a diverse range of car sizes.
+
 **Type:** 4.52 — "Type" shows moderate variability, indicating that cars come in different body styles (e.g., sedan, SUV,Pick up truck).
+
 **Paint Color:** 4.61 — Similarly, "paint_color" also shows moderate variability, with various car colors in the dataset.
+
 **Standard Deviation of the Target Variable (Used Car Price):**
+
 **Used Car Price:** 13,146.87 — The standard deviation of the target variable (price) is quite high, 
 indicating that there is a large range of prices in the used car market, which can be influenced by various factors like Transmission, model, year, odometer, condition, etc.
+
 ## Conclusion
 Given that the RMSE is a bit high and the R² is only 0.32, the model is not perfect, but it already offers clear insights into which factors are driving used car prices. 
 Based on further fine tuning other aspects of preprocessing the data such as improved feature extraction by creating new features from existing ones
