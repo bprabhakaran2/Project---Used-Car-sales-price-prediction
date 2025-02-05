@@ -36,19 +36,19 @@ Mean Squared Error (MSE): 115934567.77538289
 R-squared (R²): 0.32823662329297976
 This is followed by determining coefficients that indicates the features contributing to the used car sales price.
 Feature scaled regression score:0.32823662329297987
-**Evaluation**
+## Evaluation
 To evaluate the root mean squared error is determined 
 Root Mean Squared Error (RMSE): 10767.29157102114
 RMSE is a measure of the average magnitude of error between the model's predictions and the actual values. In this case,
 RMSE of 10767.29, indicates model is off by $10767 of the predicted used car price.
-**Cross-Validation**
+## Cross-Validation
 GridSearchCV is used for cross-validating the model 
 Model Evaluation:
 Mean Absolute Error (MAE): 8089.921633536006
 Mean Squared Error (MSE): 115934567.77538288
 R-squared (R²): 0.32823662329297987
 Ridge Regression and Lasso Regression are other mutiple regression models that were used to model as well.
-**Conclusion**
+## Conclusion
 Given that the RMSE is a bit high and the R² is only 0.32, the model is not perfect, but it already offers clear insights into which factors are driving used car prices. 
 Based on further fine tuning other aspects of preprocessing the data such as improved feature extraction by creating new features from existing ones
 Processing textual data: Converting text into word embeddings (TFIDF, GloVe, Word2Vec, BERT) or n-grams, we would be able to provide more accurate insights on the model and sales price of used cars.
